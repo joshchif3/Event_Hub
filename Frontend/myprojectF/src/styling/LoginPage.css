@@ -1,0 +1,72 @@
+/* Apply the gradient background to the login-page-container */
+.login-page-container {
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  height: 100vh; /* Full screen height */
+  display: flex; /* Flexbox for centering */
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Set default text color to white for contrast */
+}
+
+/* Center and style the login box */
+.main {
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent box */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Logo styles */
+.login-logo {
+  display: block;
+  margin: 0 auto 20px; /* Center the logo and add spacing */
+  width: 100px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Button styles */
+button {
+  background-color: #61ce70;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #4caf50;
+}
+
+.error-message {
+  color: #ff4d4d;
+  margin-top: 10px;
+}
