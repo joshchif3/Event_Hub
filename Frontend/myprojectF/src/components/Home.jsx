@@ -86,7 +86,16 @@ const Home = () => {
        
         <div className="additional-info">
           <h3>Why Attend Community Events?</h3>
-          <p>Community events are a great way to connect with like-minded people, learn new things, and share experiences. Join us and be part of something special!</p>
+          <p>Community events are an excellent opportunity to connect with like-minded individuals, learn new skills, and share valuable experiences.</p>
+
+<p>Whether you’re passionate about technology, business, music, or sports, these events provide a platform to engage with experts, expand your knowledge, and foster meaningful relationships.</p>
+
+<p>Not only can you gain insights into your areas of interest, but you can also contribute to the community by sharing your own experiences and ideas.</p>
+
+<p>These events are designed to bring people together, create a sense of belonging, and inspire personal and professional growth.</p>
+
+<p>Join us at our next community event and be part of something special that could transform the way you think, interact, and grow!</p>
+
         </div>
       </div>
     </div>
