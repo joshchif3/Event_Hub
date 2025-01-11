@@ -60,6 +60,11 @@ public class Event {
     private User user;
 
     @Lob
-    @Column(name = "image")
+    @Column(name = "image", columnDefinition = "BLOB")
     private byte[] image;
+
+
+    public String getImageAsBase64() {
+        return image != null ? java.util.Base64.getEncoder().encodeToString(image) : null;
+    }
 }

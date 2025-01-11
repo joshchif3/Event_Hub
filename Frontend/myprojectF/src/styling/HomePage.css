@@ -2,162 +2,272 @@
 .home {
   padding: 20px;
   background-color: #f9f9f9;
+  font-family: "Montserrat", sans-serif;
 }
 
+/* Hero Section */
 .home .hero-section {
   text-align: center;
-  padding: 50px 20px;
+  padding: 60px 20px;
   background: linear-gradient(135deg, #007bff, #61ce70);
   color: white;
+  border-radius: 10px;
 }
 
-.home .categories {
-  text-align: center;
-  margin: 40px 0;
+.home .hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-.home .category-cards {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
+.home .hero-section p {
+  font-size: 1.2rem;
 }
 
-.home .category-card {
-  width: 250px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.home .category-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-.home .category-card img {
-  width: 100%;
-  height: 180px;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
+/* Search Section */
 .home .search-section {
-  text-align: center;
   margin: 40px 0;
+  text-align: center;
 }
 
-.home .search-bar input {
+.home .search-section h2 {
+  margin-bottom: 10px;
+}
+
+.home .search-section input {
   width: 50%;
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 1rem;
 }
 
+/* Featured Events Section */
 .home .featured-events {
+  margin: 40px 0;
+}
+
+.home .featured-events h2 {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.home .event-slider {
-  display: flex;
-  justify-content: center;
+.home .event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  overflow: hidden;
 }
 
-.home .event-slide {
-  width: 300px;
-  border-radius: 8px;
+.home .event-card {
+  background-color: #fff;
+  border-radius: 10px;
   overflow: hidden;
-  position: relative;
-  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.home .event-slide img {
+.home .event-card:hover {
+  transform: translateY(-10px);
+}
+
+.home .event-image img {
   width: 100%;
-  height: 250px;
+  height: 200px;
   object-fit: cover;
 }
 
 .home .event-info {
   padding: 15px;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  text-align: center;
-  border-radius: 8px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 
-.home .slider-nav {
-  margin-top: 20px;
+.home .event-info h3 {
+  font-size: 1.5rem;
+  color: #007bff;
 }
 
-.home .slider-nav .btn {
-  padding: 10px 20px;
-  margin: 5px;
-  background-color: #61ce70;
-  border: none;
+.home .event-info p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.home .btn {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #007bff;
   color: white;
   border-radius: 5px;
-  cursor: pointer;
+  text-decoration: none;
 }
 
-.home .slider-nav .btn:hover {
-  background-color: #007bff;
+.home .btn:hover {
+  background-color: #0056b3;
 }
 
-.home .additional-info {
-  position: relative;
+/* Category Cards Section */
+.home .category-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.home .category-card {
+  width: 200px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  padding: 80px 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
-.home .video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+.home .category-card:hover {
+  transform: translateY(-10px);
 }
 
-.home .video-background video {
+.home .category-card img {
   width: 100%;
-  height: 100%;
+  height: 150px;
   object-fit: cover;
 }
 
-.home .info-content {
-  position: relative;
-  z-index: 1;
+.home .category-card h3 {
+  padding: 10px;
+  color: #333;
+  font-size: 1.2rem;
+}
+/* HomePage.css */
+
+.home {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+}
+
+.search-section {
+  margin-bottom: 30px;
+}
+
+.search-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.search-section input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.featured-events {
+  margin-bottom: 30px;
+}
+
+.featured-events h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.event-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.event-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: all 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+}
+
+.event-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.event-info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.event-info p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.event-info .btn {
+  display: inline-block;
+  background-color: #61ce70;
   color: white;
-  max-width: 800px;
-  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
 }
 
-.home .info-content h3 {
-  font-size: 2em;
-  color: #61ce70;
+.event-info .btn:hover {
+  background-color: #45a858;
 }
 
-.home .info-content p {
-  font-size: 1.1em;
-  line-height: 1.8;
-  color: #f4f4f4;
+.about-section {
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
 }
 
-.home .animated-card {
-  animation: fadeIn 1s ease-in-out;
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+.about-section p {
+  font-size: 1.2rem;
+  color: #333;
+}
+.see-more-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.see-more-btn:hover {
+  background-color: #0056b3;
 }

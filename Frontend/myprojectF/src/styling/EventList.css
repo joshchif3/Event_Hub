@@ -1,39 +1,107 @@
+/* Events List Container */
 .events-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-around;
-  }
-  
-  .event {
-    background-color: #f8f8f8;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .event-info {
-    margin-bottom: 15px;
-  }
-  
-  .event-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Event Card Styling */
+.event-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  height: 550px; /* Increased height for consistency */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Event Image Styling */
+.event-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Placeholder Text for No Image */
+.event-image p {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  color: #999;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Event Info Styling */
+.event-info {
+  padding: 15px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+/* Event Title Styling */
+.event-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Event Description Styling */
+.event-info .description {
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+}
+
+/* Event Details Styling */
+.event-info p {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Button Styling */
+.event-info .btn-container {
+  margin-top: auto;
+  text-align: center;
+}
+
+button {
+  background-color: #61ce70;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #45a858;
+}
+
+/* Card Hover Effect */
+.event-card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}

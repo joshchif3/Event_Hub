@@ -1,22 +1,42 @@
+/* Header Container */
 .header {
-    background-color: #23646d;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .header nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .header nav ul li {
-    display: inline;
-    margin: 0 10px;
-  }
-  
-  .header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
+  background-color: #23646d;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navigation Menu Styling */
+.header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.header nav ul li {
+  margin: 0 15px;
+}
+
+.header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* User Icon Styling */
+.user-icon {
+  margin-left: auto;
+}
+
+.icon {
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: #61ce70; /* Change color on hover */
+}

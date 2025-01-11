@@ -102,7 +102,7 @@ const SignUpPage = ({ setIsLoggedIn }) => {
             >
               <option value="NORMAL_USER">Normal User</option>
               <option value="EVENT_ORGANIZER">Event Organizer</option>
-              <option value="ADMIN">Admin</option>
+             
             </select>
           </div>
           <button type="submit">Sign Up</button>

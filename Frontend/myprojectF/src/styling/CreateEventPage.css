@@ -1,58 +1,84 @@
+/* Scope styles to Create Event page */
 .create-event-page-container {
-    font-family: Arial, sans-serif;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-  }
-  
-  h2 {
-    text-align: center;
-    color: #007bff;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    display: block;
-  }
-  
-  input, textarea, button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 16px;
-    transition: background-color 0.3s;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  .error-message {
-    color: red;
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px; /* Space for the header */
+  color: #fff;
+}
+
+/* Header specific to Create Event page */
+.create-event-page-container header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(15, 12, 41, 0.9); /* Slightly transparent to match the gradient */
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1.5rem;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Main form container for Create Event page */
+.create-event-page-container .main {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  margin: 20px 0; /* Adds some space from header and bottom */
+  overflow-y: auto; /* Allows scrolling within the form */
+  max-height: 70vh; /* Prevents the form from taking too much space */
+}
+
+/* Form field styles scoped to Create Event page */
+.create-event-page-container .form-group {
+  margin-bottom: 15px;
+}
+
+.create-event-page-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.create-event-page-container .form-group input,
+.create-event-page-container .form-group textarea,
+.create-event-page-container .form-group select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Button styles scoped to Create Event page */
+.create-event-page-container button {
+  background-color: #61ce70;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.create-event-page-container button:hover {
+  background-color: #4caf50;
+}
+
+/* Error message styling scoped to Create Event page */
+.create-event-page-container .error-message {
+  color: #ff4d4d;
+  margin-top: 10px;
+}
